@@ -2,7 +2,7 @@ const btnLogin = document.querySelector('.btn').addEventListener('click', functi
     let username = document.querySelector('#username').value;
     let password = document.querySelector('#password').value;
 
-    fetch('http://localhost:3000/users/login', {
+    fetch('http://webtech-bday.herokuapp.com/users/login', {
         method: "post",
         headers: {
             'Content-Type': 'application/json'

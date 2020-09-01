@@ -3,7 +3,7 @@ const btnSignup = document.querySelector('.btn').addEventListener('click', funct
     let password = document.querySelector('#password').value.trim();
     let bday = document.querySelector('#bday').value.trim();
 
-    fetch('http://localhost:3000/users/signup', {
+    fetch('http://webtech-bday.herokuapp.com/users/signup', {
         method: "post",
         headers: {
             'Content-Type': 'application/json'

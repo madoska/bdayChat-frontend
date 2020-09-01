@@ -2,7 +2,7 @@ if(!localStorage.getItem('token')){
     window.location.href="login.html"
 }
 
-fetch('http://localhost:3000/views/chat', {
+fetch('http://webtech-bday.herokuapp.com/views/chat', {
     'headers': {
         'Authorization': 'Bearer' + localStorage.getItem('token')
     }
@@ -17,7 +17,7 @@ fetch('http://localhost:3000/views/chat', {
 document.querySelector('.input__btn').addEventListener('click', e => {
     let text = document.querySelector('.input__text').value;
 
-    fetch('http://localhost:3000/views/chat', {
+    fetch('http://webtech-bday.herokuapp.com/views/chat', {
         method: 'POST',
         'headers': {
             'Content-type': 'application/json',
