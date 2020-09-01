@@ -1,10 +1,6 @@
 window.addEventListener('load', (event) => {
     let token = localStorage.getItem('token')
 
-    if(!token){
-        window.location.href="login.html"
-    }
-
     fetch('http://localhost:3000/views/chat', {
         'headers': {
             'Authorization': 'Bearer' + token
@@ -14,7 +10,7 @@ window.addEventListener('load', (event) => {
     }).then(json => {
         console.log(json)
     }).catch(err => {
-        console.log("Error")
+        window.location.href="login.html"
     })
     
     document.querySelector('.input__btn').addEventListener('click', e => {
