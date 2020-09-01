@@ -17,7 +17,7 @@ const btnLogin = document.querySelector('.btn').addEventListener('click', functi
         if (json.status === 'success') {
             let token = json.data.token;
             localStorage.setItem('token', token);
-            window.location.href="/views/chat";
+            window.location.href="index.html";
         } else {
             let feedback = document.querySelector('.alert');
             feedback.textContent = "Login failed!";
