@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    hi
+    <div class="container">
+        <div class="header">
+            <p class="usercount">There are X users who share a b.day with you!</p>
+        </div>
+        <div class="chat">
+            <div class="log">
+                <ul>
+                    <li class="log__msg log__msg--sent">
+                        <p class="log__user">User1</p>
+                        <p class="log__text">Message</p>
+                    </li>
+
+                    <li class="log__msg log__msg--received">
+                        <p class="log__user">User2</p>
+                        <p class="log__text">Reply</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="input">
+            <input class="input__text" type="text" name="msg" id="msg" placeholder="Say hello :)">
+            <input type="button" class="input__btn" name="submit" value="Send">
+        </div>
+    </div>
 </body>
+
 </html>
